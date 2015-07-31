@@ -1,0 +1,9 @@
+﻿@model EPiServer.Find.Blocks.Models.CustomizedSearchResultsViewModel
+<dl>
+    @foreach (var link in Model.Items)
+    {
+        <dd>
+            <a href="@link.Url">@link.Title</a>
+        </dd>
+    }
+</dl>

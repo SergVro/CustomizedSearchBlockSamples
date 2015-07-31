@@ -1,0 +1,15 @@
+﻿@model CustomizedSearchBlock.Models.ViewModels.SearchBlockWithImagesModel
+<div>
+    <h1>Hello!</h1>
+    <ol>
+        @foreach (var item in Model.Items)
+        {
+            <li>
+                <a href="@item.Url">
+                    <img src="@item.ImageUri" style="max-width: 50px"/>
+                    @item.Title
+                </a>
+            </li>
+        }
+    </ol>
+</div>
